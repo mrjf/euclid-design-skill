@@ -1,6 +1,6 @@
 A design system inspired by an edition of Euclid's Elements of Geometry I saw in Vallejo's [McCune Collection](https://www.vallejo.gov/attractions___events/attractions/museums/mc_cune_collection).
 
-[euclid.hhh.hm](euclid.hhh.hm)
+[euclid.hhh.hm](https://euclid.hhh.hm)
 
 Vibe coded w/ Codex 5.5 x-high, modeled off: https://github.com/zeke/swiss-design-skill
 
