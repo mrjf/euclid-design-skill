@@ -310,7 +310,6 @@ p {
   stroke-width: 3.2;
 }
 
-.hero-caption,
 .part-label {
   fill: var(--ink);
   font-family: "Cormorant Garamond", Georgia, serif;
