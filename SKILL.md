@@ -1,49 +1,51 @@
 ---
 name: euclid-design-skill
-description: Apply a Euclid proof-page design system to web pages, applications, documents, components, and visual assets. Use when the user asks for Euclid, geometric proof, old mathematical book, proposition-page, theorem, colored construction lines, chunky dashed geometry, ornamental initials, book typography, or a rigorous paper-and-ink design language.
+description: Apply a Euclid-inspired paper-and-geometry design system to web pages, applications, documents, components, and visual assets. Use when the user asks for old mathematical book styling, Euclidean geometry aesthetics, thick colored rules, chunky square dashes, ornamental initials, serif book typography, paper texture, or a rigorous print-like interface.
 license: MIT
 metadata:
   author: mrjf
-  version: "1.1"
+  version: "1.2"
 ---
 
 # Euclid Design System
 
-A design system rooted in old mathematical proposition pages: serif book typography, paper surfaces, thick ink rules, colored geometric notation, ornamental initials, and square construction dashes. The goal is not antique decoration. The goal is to make an interface feel like a proof: ordered, legible, relational, and visually exact.
+A generic visual design system inspired by Euclidean geometry books: warm paper surfaces, old-style serif typography, thick ink borders, colored construction marks, ornamental initials, and square dashed lines. It is a visual language for any subject: SaaS tools, portfolios, docs, dashboards, editors, forms, games, reports, landing pages, or product interfaces.
 
-Use this skill to design a new page or component in the Euclid system. For a full static starter, copy `assets/static-site/` into the target project and adapt it. For extra reference rules, read `references/visual-system.md`.
+Use this skill to give a page or component the Euclid look. For a full static starter, copy `assets/static-site/` into the target project and adapt it. For extra visual references, read `references/visual-system.md`.
 
-## Design Intent
+## The Look
 
-The Euclid system treats every screen as a proposition sheet. Text states the claim, geometry explains the relation, color encodes meaning, and heavy rules organize the proof. A finished page should feel tactile, editorial, and precise while still functioning as modern UI.
+The Euclid look is tactile, printed, and exact:
 
-Design from the content outward:
+- Warm cream paper instead of neutral white.
+- Thick black rules instead of soft dividers.
+- Large old-style serif display text instead of generic sans-serif hero type.
+- Small caps, mono labels, and framed initials for editorial structure.
+- Blue, red, and ochre marks used like annotation colors.
+- Chunky square dash segments for construction lines, separators, progress marks, and decorative rules.
+- Simple geometric accents: circles, arcs, sectors, line fragments, grids, and measured-looking marks.
 
-1. Identify the claim, task, object, or state the page is proving.
-2. Give it a proposition label such as `PROP. I.` or `BOOK III. PROP. XVI.`
-3. Build one strong text block and one clear figure, table, form, or tool surface.
-4. Use color only when it carries a role in the system.
-5. Use thick ruled boundaries and square dashes to make structure visible.
+Do not force the content to be about mathematics. Use the system as a surface treatment and layout grammar.
 
 ## Core Principles
 
-1. **The page is a proof.** Every section should have a visible proposition role: title, statement, construction, evidence, result, or action.
-2. **Geometry is notation.** Circles, arcs, rays, tangent lines, filled angles, and dashed construction paths should explain relationships, not sit as unrelated ornament.
-3. **Color has meaning.** Blue, red, ochre, and ink each have a stable semantic role. Do not pick colors ad hoc once the role is established.
-4. **Rules create authority.** Thick borders, horizontal dividers, and boxed controls are part of the visual grammar.
-5. **Typography carries the voice.** Large old-style serif display text creates the book-page feeling; small caps and mono labels organize the interface.
-6. **Restraint beats reproduction.** Use the source language cleanly. A simplified drawn diagram is usually stronger than a literal collage of book-page fragments.
+1. **Paper first.** Start with a page-like field: cream ground, subtle grid, light speckle, and quiet tonal variation.
+2. **Ink defines structure.** Use thick black borders, dividers, and frames to give the interface authority.
+3. **Color is annotation.** Blue, red, and ochre should feel like printed marks added to the page, not a conventional brand gradient.
+4. **Geometry is optional language.** Add circles, arcs, sectors, rays, and ruled marks when they support the layout or mood; do not invent a literal diagram if the UI does not need one.
+5. **Type sets the era.** Use high-contrast serif display type, upright readable body text, small caps labels, and mono controls.
+6. **Dashes are signature.** The chunky square dashed line is the most recognizable motif; use it consistently across horizontal, vertical, and diagonal marks.
 
 ## Implementation Workflow
 
-1. **Choose the composition.** Pick a proof page, editorial spread, archive/table view, form, dashboard, or poster plate based on the user’s task.
-2. **Set tokens first.** Define the paper, ink, blue, red, ochre, rules, dash size, and typefaces as variables before styling components.
-3. **Create the paper field.** Use a warm page background with subtle grid or speckle texture. Put the content on ruled pages or framed plates.
-4. **Place the proposition heading.** Use centered italic proposition labels for major sections. Use small caps running heads for book/chapter context.
-5. **Build the main content block.** Keep prose upright and readable. Let the display type be large, but ensure all words fit at mobile and desktop sizes.
-6. **Draw the figure.** Use SVG or canvas for proof diagrams. Keep the construction clean and align it to the surrounding grid.
-7. **Design controls as proof objects.** Buttons, inputs, cards, tables, and command boxes should use the same paper, ink, border, and color notation.
-8. **Verify visually.** Check desktop and mobile renderings for text fit, diagram clarity, dash construction, and interactive states.
+1. **Define tokens.** Add paper, ink, blue, red, ochre, border, dash, and type tokens before component work.
+2. **Build the paper field.** Apply warm paper color and subtle ruled texture to the page or major panels.
+3. **Choose a layout pattern.** Pick a page frame, editorial split, archive/table, tool panel, poster plate, or form layout based on the product need.
+4. **Set the type hierarchy.** Use serif display text for high-level statements, readable serif body copy, mono labels, and small caps metadata.
+5. **Add thick rules.** Frame important areas with 3px to 6px ink borders; use horizontal and vertical rules as real layout structure.
+6. **Use colored marks.** Add blue, red, or ochre lines, swatches, chips, badges, or state marks where they clarify hierarchy or action.
+7. **Add geometric accents only where useful.** Use SVG/CSS geometry for decoration, states, data, empty panels, or hero art, but keep the interface content primary.
+8. **Verify in browser.** Check text fit, mobile layout, dash rhythm, focus states, copy buttons, and form controls.
 
 ## Tokens
 
@@ -70,15 +72,15 @@ Use these defaults unless the target project already has equivalent theme variab
 
 | Role | Hex | Use |
 | ---- | --- | --- |
-| Paper | `#efe2c9` | Page field, section ground, inactive surfaces |
-| Light paper | `#f8efd9` | Proof plates, forms, command boxes |
-| Dark paper | `#d7c3a2` | Shadows, inset rules, aged-page contrast |
-| Ink | `#191816` | Text, borders, final relation, proof marks |
-| Euclid blue | `#0e558a` | Principal circle, measured equality, main relation |
-| Vermilion red | `#c43c35` | Alternate path, contradiction, comparison |
-| Proof ochre | `#e4a412` | Known base, tangent, established construction |
+| Paper | `#efe2c9` | Page background, inactive areas, quiet section fields |
+| Light paper | `#f8efd9` | Main panels, form fields, command boxes, framed surfaces |
+| Dark paper | `#d7c3a2` | Offset shadows, gutters, inset page edges |
+| Ink | `#191816` | Text, borders, dividers, icons, final emphasis |
+| Euclid blue | `#0e558a` | Primary accent marks, selected states, main line graphics |
+| Vermilion red | `#c43c35` | Warnings, comparison marks, destructive or alternate states |
+| Ochre | `#e4a412` | Primary buttons, highlights, baselines, active accents |
 
-Use colored lines sparingly. If a color appears in a diagram, it should also be useful in labels, keys, or component accents.
+Color should appear as solid printed ink. Prefer flat fills and thick strokes over gradients.
 
 ## Typography
 
@@ -94,7 +96,7 @@ Small caps and ornamental initials:
 font-family: "IM Fell English SC", "Cormorant Garamond", Georgia, serif;
 ```
 
-Commands, coordinates, labels, and data:
+Commands, labels, coordinates, and data:
 
 ```css
 font-family: "IBM Plex Mono", "Courier New", monospace;
@@ -104,74 +106,85 @@ font-family: "IBM Plex Mono", "Courier New", monospace;
 
 | Role | CSS starting point | Notes |
 | ---- | ------------------ | ----- |
-| Display | `clamp(3.6rem, 9vw, 8rem)` | Main proposition phrase; high contrast, tight but not cramped |
-| Section title | `clamp(2.6rem, 6vw, 5.5rem)` | Secondary proposition statements |
-| Heading | `clamp(1.8rem, 3vw, 3rem)` | Component and panel headings |
-| Body | `1.25rem` to `1.45rem` | Generous leading, upright roman |
-| Caption | `1rem` to `1.1rem` | Italic book captions and marginal notes |
-| Mono label | `0.85rem` to `1rem` | Uppercase labels, commands, table headers |
+| Display | `clamp(3.4rem, 8vw, 8rem)` | Large old-style serif statements |
+| Page title | `clamp(2.4rem, 5vw, 5rem)` | Section or screen titles |
+| Panel heading | `clamp(1.6rem, 3vw, 3rem)` | Cards, panels, modules |
+| Body | `1.15rem` to `1.4rem` | Upright, generous leading, readable |
+| Caption | `0.95rem` to `1.1rem` | Optional italic notes, image captions, footnotes |
+| Mono label | `0.8rem` to `1rem` | Uppercase labels, commands, table headers |
 
 Typographic habits:
 
-- Use large old-style serif type for proof statements.
-- Use small caps for running heads, proposition metadata, and folio labels.
-- Use italic for proposition labels, captions, and book-like emphasis.
-- Use mono for commands, structured data, and mechanical controls.
-- Keep letter spacing at `0` for display serif text; use uppercase tracking only for mono or small labels.
-- Balance headings manually with line breaks when needed; avoid words colliding with borders or diagrams.
+- Use large old-style serif type for the main page voice.
+- Use upright roman text for body copy and UI descriptions.
+- Use italic sparingly for captions, footnotes, and editorial emphasis.
+- Use mono for controls, commands, tabular data, and technical labels.
+- Use small caps for short metadata, nav labels, running labels, and badges.
+- Keep display letter spacing at `0`; use tracking only for mono and small uppercase labels.
+- Balance large headings manually so long words do not hit borders or adjacent graphics.
 
-## Composition Patterns
+## Layout Patterns
 
-### Proof Page
+### Page Frame
 
-Use for a hero, feature page, article header, or major app state.
+Use for home screens, docs, product pages, settings pages, or focused workflows.
 
-- Top: centered `PROP. X.` label or small caps running head.
-- Left or first column: large proposition statement and supporting prose.
-- Right or second column: framed proof diagram or tool surface.
-- Bottom: concise proof metadata, action row, or result statement.
+- Warm paper page background.
+- One or more thick ruled panels.
+- Large serif title or statement.
+- Clear action row, table, editor, form, or content region.
+- Optional folio-style labels in small caps or mono, based on content.
 
-### Editorial Spread
+### Editorial Split
 
-Use for explaining a system, feature set, or methodology.
+Use when pairing text with controls, examples, media, or a visual accent.
 
-- Treat the screen as facing pages.
-- Pair a drop-cap text block with a principle list, diagram, or table.
-- Use thick vertical rules or page gutters to separate columns.
-- Keep the main reading order natural on mobile.
+- One column can carry large serif text.
+- The other column can carry a panel, form, table, product screenshot, or geometric illustration.
+- Use a thick vertical rule, gutter, or frame to separate the areas.
+- On mobile, stack in the natural reading order.
 
-### Archive Or Index
+### Archive Or Table View
 
-Use for collections, dashboards, and browsing interfaces.
+Use for dashboards, collections, search results, admin pages, changelogs, and indexes.
 
-- Left rail: book/category filters with boxed buttons.
-- Main region: rows as proposition records.
-- Each row can include a mini diagram, prop number, title, and state.
-- Use a strong toolbar rule at the top.
+- Use boxed filters or a left rail when there is meaningful navigation.
+- Use thick row dividers and mono headers.
+- Add mini swatches, line samples, status chips, or geometric icons for scanability.
+- Keep dense data readable; let tables scroll horizontally when needed.
 
 ### Poster Plate
 
-Use for visual summaries, launch pages, reports, or printable graphics.
+Use for high-impact pages, announcements, splash screens, reports, and visual summaries.
 
-- Large framed plate.
-- One big theorem statement.
-- One diagram with 3 to 6 meaningful primitives.
-- Small caps metadata and `Q. E. D.`-style proof marks.
+- Large framed paper plate.
+- Big serif headline or product phrase.
+- One strong supporting object: a screenshot, chart, geometric composition, product mockup, or typographic specimen.
+- Small caps metadata, colored rules, and square dashes for printed-poster energy.
 
-### Form Or Tool
+### Tool Panel
 
-Use for data entry and interactive workflows.
+Use for editors, calculators, generators, configuration screens, and interactive app surfaces.
+
+- Keep the tool itself central.
+- Frame control groups with ink rules.
+- Use paper fields, mono labels, and print-block buttons.
+- Use colored marks to show selected mode, state, error, or progress.
+
+### Form
+
+Use for onboarding, settings, contact flows, registration, and data entry.
 
 - Inputs are paper fields with thick ink borders.
 - Labels use mono or small caps.
-- Buttons are boxed, high-contrast, and direct.
-- Validation can use red construction marks or an ink proof note.
+- Help text uses muted serif or mono, depending on density.
+- Validation can use red rules, red side marks, or boxed notes.
 
 ## Components
 
 ### Surfaces
 
-Use rectangular paper surfaces with hard corners. A card is acceptable for a repeated object, but the page itself should feel like a sheet or plate rather than a stack of floating modern cards.
+Use rectangular paper surfaces with hard corners. A card is acceptable for a repeated object, but avoid making the whole page look like generic floating cards.
 
 ```css
 .euclid-plate {
@@ -198,7 +211,7 @@ Buttons should feel like print blocks:
 }
 ```
 
-Use blue, red, or ochre button fills only when the action meaning matches the color role.
+Use hover and active states as physical print effects: slight offset, inset shadow, darker paper, or heavier rule.
 
 ### Inputs
 
@@ -215,48 +228,59 @@ Inputs, selects, and textareas use paper fill, ink borders, serif values, and mo
 
 ### Drop Caps
 
-Drop caps are framed initials, not oversized decorative letters.
+Drop caps and initial blocks are optional editorial accents.
 
 - Use an ink square with one or two paper inner rules.
 - Center the glyph optically in the square.
 - Keep the letter upright and high-contrast.
-- Use them at the start of editorial or theorem prose, not in every section.
+- Use sparingly, typically at the start of a prominent text block.
 
 ### Tables And Lists
 
-Tables should look like ruled proof ledgers:
+Tables should look like ruled ledgers:
 
 - Thick top and bottom rules.
 - Mono uppercase headers.
-- Serif values.
+- Serif values or mono numeric data.
 - Strong row dividers.
-- Optional mini proof glyphs or swatches in the first column.
+- Optional swatches, line samples, or glyph marks in leading cells.
 
 ### Command Boxes
 
-Command boxes are useful for install snippets or copyable configuration.
+Command boxes are useful for install snippets, code, copyable config, or exact instructions.
 
 - Use a framed paper box.
 - Put a short colored rule or dash sample before the command.
 - Keep the command text mono.
 - Provide a real copy button when the command is meant to be copied.
 
-## Diagram System
+### Badges And Chips
 
-Use SVG for most proof diagrams. Keep viewBox dimensions simple and align main points to a loose grid.
+Badges should look printed, not pill-like.
 
-### Primitive Roles
+- Prefer rectangular chips with ink borders.
+- Use mono uppercase labels.
+- Use colored side marks, underlines, or small swatches for state.
+- Keep border radius at `0` unless the host app already has rounded components.
 
-| Primitive | Role |
-| --------- | ---- |
-| Circle / arc | Field of relation, theorem body, measured equality |
-| Solid line | Known segment, result, tangent, or named object |
-| Square dashed line | Construction, extension, assumed relation, secondary path |
-| Filled sector | Angle chip, equivalence, local proof emphasis |
-| Heavy border | Page, plate, theorem frame |
-| Small caps text | Proposition metadata or proof conclusion |
+## Geometry And Marks
 
-### SVG Stroke Classes
+Geometry is a style ingredient, not a content requirement. Use these marks to add the Euclid feel to any interface.
+
+### Useful Motifs
+
+| Motif | Use |
+| ----- | --- |
+| Circle or arc | Avatar frame, progress ring, chart accent, empty-state mark |
+| Straight rule | Divider, baseline, section separator, button accent |
+| Square dashed rule | Construction accent, loading/progress, relation between UI areas |
+| Filled sector | Angle-like chip, status wedge, chart slice, decorative corner |
+| Thick frame | Modal, page plate, card, screenshot border, tool boundary |
+| Grid or dot field | Paper texture, canvas background, editor surface |
+
+### Stroke Classes
+
+Use SVG when drawing custom geometry, charts, marks, or hero art. CSS borders and gradients are fine for simple rules and dash samples.
 
 ```css
 .stroke-ink,
@@ -275,7 +299,7 @@ Use SVG for most proof diagrams. Keep viewBox dimensions simple and align main p
 .stroke-ochre { stroke: var(--euclid-ochre); }
 ```
 
-### Square Construction Dashes
+### Square Dashes
 
 The Euclid dash is chunky and block-like. Use butt caps so each segment reads as a square chunk.
 
@@ -317,17 +341,14 @@ For horizontal or vertical UI dash samples, use the same block and gap:
 
 For vertical samples, rotate the element or use a `180deg` gradient while preserving the same `10px` block and `5px` gap.
 
-### Diagram Density
+### Mark Density
 
-A clear Euclid diagram usually needs:
+The system works best when marks are deliberate:
 
-- One primary circle or arc.
-- One base or tangent line.
-- Two to four relation lines.
-- One or two filled angle chips.
-- One concise text block or proof mark.
-
-When a diagram starts to feel busy, remove primitives before adding labels. The diagram should clarify the proposition at a glance.
+- Use one or two geometric motifs per major area.
+- Keep colored lines thick enough to feel printed.
+- Leave paper margin around marks so they do not look like accidental decoration.
+- Let real product content remain more important than the ornament.
 
 ## Layout And Responsiveness
 
@@ -349,12 +370,12 @@ Base layout:
 
 Responsive rules:
 
-- Below tablet width, stack text, controls, and diagrams in reading order.
-- Keep framed plates within the viewport width.
-- Use `clamp()` for display sizes and container widths, not viewport-only font scaling.
+- Below tablet width, stack text, controls, media, and panels in reading order.
+- Keep framed plates and tool panels within the viewport width.
+- Use `clamp()` for display sizes and container widths.
 - Preserve at least `44px` touch targets.
 - Let tables scroll horizontally when the data requires it.
-- Reduce diagram complexity on small screens rather than shrinking labels to illegibility.
+- Reduce decorative mark density on small screens before shrinking text too far.
 
 ## Tailwind Translation
 
@@ -394,26 +415,26 @@ Interactive states should preserve the print language:
 - Focus: visible ink outline with a small colored offset rule.
 - Active: pressed block effect, ochre darkening, or reduced shadow.
 - Disabled: lower ink opacity and no colored emphasis.
-- Error: red rule, red proof mark, and a readable text explanation.
-- Success: blue or ochre rule plus a concise proof/result note.
+- Error: red rule, red side mark, and a readable text explanation.
+- Success: blue or ochre rule plus a concise result note.
 
 ## Accessibility
 
 - Maintain high contrast between ink and paper.
 - Keep text selectable when possible; avoid rendering real paragraphs as images.
-- Add accessible names to SVG proof diagrams.
-- Do not rely on color alone; pair color roles with labels, line styles, icons, or spatial position.
-- Respect reduced-motion settings if adding drawing animations.
+- Add accessible names to custom SVGs and decorative mark groups where appropriate.
+- Do not rely on color alone; pair color roles with labels, line styles, icons, or position.
+- Respect reduced-motion settings if adding drawing or page-texture animations.
 - Keep focus order aligned with the visual reading order.
 
 ## Visual QA Checklist
 
 Before finishing, inspect the page in a browser:
 
-- Proposition labels, headings, text blocks, diagrams, and controls are aligned to a visible structure.
-- The main figure is readable at a glance and not overloaded with unnecessary primitives.
-- Square dashes use the Euclid block rhythm horizontally, vertically, and diagonally.
-- Text fits within frames, buttons, tables, and cards at mobile and desktop widths.
-- Drop-cap letters are optically centered in their boxes.
+- Paper texture, borders, typography, and color marks create the Euclid look without overwhelming the product content.
+- Square dashes use the same block rhythm horizontally, vertically, and diagonally.
+- Text fits within frames, buttons, tables, cards, and form fields at mobile and desktop widths.
+- Drop-cap letters are optically centered when used.
 - Copy buttons, forms, links, and other interactive elements work.
-- The page still feels like a proof sheet after real user content replaces placeholder text.
+- Decorative geometry does not collide with real UI, labels, or body text.
+- The design still works after real user content replaces placeholder text.

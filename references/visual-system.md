@@ -1,30 +1,32 @@
 # Euclid Visual System
 
+This reference describes how to get the Euclid-inspired look without making the content literally about Euclid or mathematics.
+
 ## Composition
 
-Treat each major section as a page from a proposition book:
+Treat major sections as printed paper surfaces:
 
-- Center an italic proposition heading at the top: `PROP. I.`, `PROP. II.`, etc.
-- Use full-width ruled sections or framed proof plates, not nested cards.
-- Pair strong type with one diagram or tool surface.
-- Keep proof diagrams clean: one main circle or arc, one tangent/base, two or three relation lines, one or two filled angle chips.
-- Use empty paper intentionally as margin, gutter, or pause around the proof.
+- Use full-width ruled sections, hard-edged plates, or framed tool panels.
+- Pair strong type with a form, table, image, product surface, chart, editor, or geometric accent.
+- Use thick borders and gutters to create a book-page rhythm.
+- Use empty paper intentionally as margin, pause, or contrast.
+- Keep real product content primary; geometry is a visual language, not mandatory subject matter.
 
 ## Color Roles
 
-- `#0e558a` blue: primary circle, measured equality, principal arc.
-- `#c43c35` red: alternate line, contradiction, comparison path.
-- `#e4a412` ochre: known base, tangent, established construction.
-- `#191816` ink: text, borders, final line, proof arrow.
-- `#efe2c9` and `#f8efd9`: paper ground and proof plates.
+- `#0e558a` blue: primary accents, selected states, major line graphics.
+- `#c43c35` red: warnings, comparisons, destructive states, alternate marks.
+- `#e4a412` ochre: highlights, primary actions, baselines, active accents.
+- `#191816` ink: text, borders, icons, dividers, strong emphasis.
+- `#efe2c9` and `#f8efd9`: page ground, panels, forms, command boxes.
 
 ## Typography
 
-- Use large old-style serif display type for the main proposition phrase.
-- Use upright roman text for body and marginal proof notes.
-- Use italic sparingly for captions, proposition labels, and book-like emphasis.
-- Use small caps for running heads such as `BOOK III. PROP. XXV. PROB.`.
-- Use mono only for commands, tabular tokens, and machine-like controls.
+- Use large old-style serif display type for the main page voice.
+- Use upright roman text for body and UI copy.
+- Use italic sparingly for captions, footnotes, and editorial emphasis.
+- Use small caps for short metadata, nav labels, badges, and running labels.
+- Use mono only for commands, tabular tokens, technical labels, and machine-like controls.
 
 ## Borders And Surfaces
 
@@ -32,10 +34,11 @@ Treat each major section as a page from a proposition book:
 - Keep border radius at `0` unless the host app already requires rounded corners.
 - Use paper texture through subtle grid lines, small speckles, and warm tonal shifts.
 - Buttons should be boxed, high contrast, and utilitarian.
+- Inputs should be paper fields with visible ink borders.
 
 ## Square Dashes
 
-The dashed construction line is a signature element. It must look like separated square blocks, not ordinary thin dashes.
+The square dashed mark is a signature element. It must look like separated square blocks, not ordinary thin dashes.
 
 SVG:
 
@@ -61,7 +64,7 @@ CSS inline dash:
 .inline-euclid-dash {
   width: 70px;
   height: 10px;
-  color: var(--ink);
+  color: var(--euclid-ink);
   background: repeating-linear-gradient(
     90deg,
     currentColor 0 10px,
@@ -72,27 +75,25 @@ CSS inline dash:
 
 For vertical dashes, use the same dimensions rotated or switch the gradient direction while preserving `10px` block and `5px` gap.
 
-## Diagram Guidance
+## Geometric Marks
 
-Clean diagrams beat exact reproductions. Do:
+Use geometry as accents, state indicators, data marks, empty-state art, or structural decoration.
 
-- Use one large circle or arc as the visual anchor.
-- Let colored lines meet at meaningful points.
-- Use filled sectors/chips for angles.
-- Stop construction lines before text blocks.
-- Keep captions below the figure in italic.
+Good motifs:
 
-Avoid:
+- Heavy circles or arcs.
+- Straight colored rules.
+- Square dashed paths.
+- Filled wedges or sector chips.
+- Ruled grids and dot fields.
+- Hard-edged framed panels.
 
-- Multiple overlapping circles unless required.
-- Loose line fragments that look accidental.
-- Slanted paragraph text.
-- Diagrams that collide with drop caps or marginal notes.
-- Decorative marks that do not explain relation.
+Keep marks simple and purposeful. They should support the layout, not require the page content to become a geometry lesson.
 
 ## Responsive Rules
 
-- On narrow screens, stack proposition heading, copy, and figure in that order.
-- Keep command boxes wrapping cleanly and preserve the copy button.
-- Reduce display type inside panels; do not let roman numerals or headings overflow.
+- On narrow screens, stack text, controls, media, and panels in reading order.
+- Keep command boxes wrapping cleanly and preserve copy buttons.
+- Reduce display type inside panels so headings do not overflow.
+- Reduce decorative mark density before shrinking useful text.
 - Verify mobile screenshots for text inside borders and button labels.
