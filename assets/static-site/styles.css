@@ -284,7 +284,8 @@ p {
   font-family: "IM Fell English SC", serif;
   font-size: 54px;
   font-style: normal;
-  dominant-baseline: central;
+  alignment-baseline: middle;
+  dominant-baseline: middle;
   text-anchor: middle;
 }
 
@@ -511,8 +512,8 @@ figcaption {
   color: var(--paper-light);
   font-family: "IM Fell English SC", serif;
   font-size: 66px;
-  line-height: 1;
-  padding-top: 2px;
+  line-height: 0.82;
+  padding-top: 7px;
 }
 
 .principles {
