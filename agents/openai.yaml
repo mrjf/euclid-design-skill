@@ -1,0 +1,4 @@
+interface:
+  display_name: "Euclid Design"
+  short_description: "Euclidean proof-page UI design system"
+  default_prompt: "Use $euclid-design-skill to design a clean Euclid-inspired interface."

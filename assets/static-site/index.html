@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Euclid Design System</title>
+    <meta name="description" content="A Euclid-inspired design system built from colored geometry, proof notation, book typography, and thick dashed construction lines.">
+    <link rel="stylesheet" href="styles.css?v=38">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Euclid Design System home">
+        <span class="brand-mark">E</span>
+        <span>Euclid System</span>
+      </a>
+      <nav aria-label="Sections">
+        <a href="#poster">Poster</a>
+        <a href="#tokens">Tokens</a>
+        <a href="#forms">Form</a>
+        <a href="#install">Install</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="folio-number">PROP. I.</div>
+        <div class="hero-copy">
+          <h1>Euclid's visible proof system.</h1>
+          <p>
+            A design system drawn from color-coded propositions, old-style book pages,
+            ornamental initials, heavy circles, proof marks, and construction lines.
+          </p>
+          <div class="command-line">
+            <span class="blue-line"></span>
+            <code>npx skills add <a class="repo-link" href="https://github.com/mrjf/euclid-design-skill" target="_blank" rel="noreferrer">mrjf/euclid-design-skill</a></code>
+            <span class="red-line dashed"></span>
+            <button type="button" data-copy-command="" aria-label="Copy install command">copy</button>
+          </div>
+        </div>
+        <div class="hero-figure" aria-label="Drawn Euclid geometric proof plate">
+          <svg class="hero-proof-svg" viewBox="0 0 720 500" role="img" aria-labelledby="hero-title">
+            <title id="hero-title">Drawn Euclid proof plate with colored circle theorem and proposition text</title>
+            <rect class="plate-paper" x="0" y="0" width="720" height="500"></rect>
+
+            <g class="proof-diagram">
+              <g class="plate-faint">
+                <circle cx="138" cy="342" r="58"></circle>
+                <path d="M76 382 C118 334 174 334 208 384"></path>
+              </g>
+              <circle class="stroke-blue hero-main-circle" cx="205" cy="150" r="116"></circle>
+              <path class="stroke-gold hero-solid" d="M38 314 L422 328"></path>
+              <path class="stroke-blue hero-solid" d="M84 197 L205 158"></path>
+              <path class="stroke-red hero-solid" d="M84 197 L205 314"></path>
+              <path class="stroke-black hero-solid" d="M205 158 L205 314"></path>
+              <path class="stroke-gold hero-dash vertical-dash" pathLength="115" d="M205 42 L205 158"></path>
+              <path class="stroke-blue hero-dash" pathLength="130" d="M205 158 L330 212"></path>
+              <path class="stroke-red hero-dash" pathLength="220" d="M205 314 L414 266"></path>
+              <path class="stroke-black hero-dash" pathLength="100" d="M330 212 L414 266"></path>
+              <path class="fill-black" d="M84 197 L117 204 A35 35 0 0 1 95 234 Z"></path>
+              <path class="fill-gold" d="M205 314 L240 315 A35 35 0 0 0 216 279 Z"></path>
+              <path class="fill-blue" d="M205 314 L216 279 A35 35 0 0 1 240 315 Z"></path>
+              <path class="fill-red" d="M205 314 L240 315 A35 35 0 0 1 224 324 Z"></path>
+              <path class="fill-black" d="M414 266 L395 260 A23 23 0 0 0 403 282 Z"></path>
+            </g>
+
+            <g class="hero-page-text">
+              <g class="initial-box">
+                <rect class="initial-outer" x="542" y="74" width="56" height="56"></rect>
+                <rect class="initial-inner" x="548" y="80" width="44" height="44"></rect>
+                <text class="initial-letter" x="570" y="104">T</text>
+              </g>
+              <text class="article-lead" x="604" y="98">HE straight</text>
+              <text class="article-lead" x="604" y="121">line</text>
+              <path class="stroke-gold text-rule" d="M638 121 L688 126"></path>
+
+              <text class="article-copy" x="546" y="164">
+                <tspan x="546" dy="0">drawn from the point</tspan>
+                <tspan x="546" dy="22">of contact falls without</tspan>
+                <tspan x="546" dy="22">the circle.</tspan>
+              </text>
+              <path class="stroke-black text-rule text-rule-long" d="M586 238 L672 246"></path>
+              <text class="article-copy article-note" x="566" y="286">
+                <tspan x="566" dy="0">And if any straight</tspan>
+                <tspan x="566" dy="22">line be drawn,</tspan>
+              </text>
+            </g>
+
+            <text class="hero-caption" x="162" y="362">to the point of contact, it cuts the circle.</text>
+            <text class="part-label" x="442" y="432">PART I</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section editorial">
+        <div class="folio-number">PROP. II.</div>
+        <div class="dropcap-card">
+          <span class="dropcap">T</span>
+          <p>
+            he straight line drawn from the extremity of the diameter of a circle
+            perpendicular to it, falls without the circle. Geometry becomes legible
+            when propositions are not merely named, but colored, placed, and repeated.
+          </p>
+        </div>
+        <aside class="principles">
+          <h3>Key principles</h3>
+          <ul>
+            <li><span class="proof-line blue"></span> Color is notation</li>
+            <li><span class="proof-line black dashed"></span> Dashed lines are construction</li>
+            <li><span class="angle-chip gold"></span> Angles are filled planes</li>
+            <li><span class="proof-line red"></span> Repetition proves relation</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="poster" class="section poster">
+        <div class="folio-number">PROP. III.</div>
+        <div class="section-title">
+          <p class="eyebrow">Poster Plate</p>
+          <h2>One proposition, one page.</h2>
+        </div>
+        <div class="poster-sheet">
+          <p class="running-head">BOOK III. PROP. XXV. PROB.</p>
+          <h2>Describe the circle from the segment.</h2>
+          <svg viewBox="0 0 760 410" role="img" aria-label="Poster diagram with circle and bisected chord">
+            <path class="stroke-blue heavy open-circle" d="M117 322 A170 170 0 1 1 530 314"></path>
+            <path class="stroke-blue heavy" d="M118 247 L358 92"></path>
+            <path class="stroke-black heavy" d="M358 92 L526 313"></path>
+            <path class="stroke-gold heavy" d="M238 184 L298 258"></path>
+            <path class="stroke-red heavy" d="M298 258 L386 221"></path>
+            <path class="stroke-black dash" pathLength="70" d="M298 258 L298 354"></path>
+            <text x="575" y="150">Q. E. D.</text>
+          </svg>
+          <div class="poster-meta">
+            <span>Segment given</span>
+            <span>Perpendiculars drawn</span>
+            <span>Centre found</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="tokens" class="section tokens">
+        <div class="folio-number">PROP. IV.</div>
+        <div class="section-title">
+          <p class="eyebrow">Tokens</p>
+          <h2>Color, line, figure, proof.</h2>
+        </div>
+        <div class="token-layout">
+          <div class="specimen-table">
+            <div class="row heading">
+              <span>Token</span>
+              <span>Value</span>
+              <span>Use</span>
+            </div>
+            <div class="row">
+              <span>Euclid Blue</span>
+              <span>#0E558A</span>
+              <span>Circles, principal arcs, measured equality</span>
+            </div>
+            <div class="row">
+              <span>Vermilion Red</span>
+              <span>#C43C35</span>
+              <span>Contradiction, alternate line, acute angle</span>
+            </div>
+            <div class="row">
+              <span>Proof Ochre</span>
+              <span>#E4A412</span>
+              <span>Base line, tangent, known construction</span>
+            </div>
+            <div class="row">
+              <span>Ink Black</span>
+              <span>#191816</span>
+              <span>Text, theorem line, final relation</span>
+            </div>
+            <div class="row">
+              <span>Page Cream</span>
+              <span>#EFE2C9</span>
+              <span>Ground, panels, book leaf</span>
+            </div>
+          </div>
+          <div class="palette">
+            <span class="swatch blue">blue</span>
+            <span class="swatch red">red</span>
+            <span class="swatch gold">ochre</span>
+            <span class="swatch black">ink</span>
+            <span class="swatch cream">paper</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cards">
+        <div class="folio-number">PROP. V.</div>
+        <div class="section-title">
+          <p class="eyebrow">Components</p>
+          <h2>Objects of proof.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="proof-card">
+            <span class="prop">I</span>
+            <h3>Line phrase</h3>
+            <p>A sentence can carry geometry inside it: draw <span class="proof-line blue"></span> and <span class="proof-line black"></span> bisect them.</p>
+          </article>
+          <article class="proof-card">
+            <span class="prop">II</span>
+            <h3>Dashed construction</h3>
+            <p>Use <span class="proof-line red dashed"></span> or <span class="proof-line blue dashed"></span> for lines assumed, extended, or disproved.</p>
+          </article>
+          <article class="proof-card">
+            <span class="prop">III</span>
+            <span class="card-angle-chip" aria-hidden="true"></span>
+            <h3>Angle chip</h3>
+            <p>Filled sectors replace labels and make equivalence visible before the reader reaches the equation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section app-panel">
+        <div class="folio-number">PROP. VI.</div>
+        <div class="section-title">
+          <p class="eyebrow">Archive</p>
+          <h2>Browse the proof system.</h2>
+        </div>
+        <div class="app-shell">
+          <aside>
+            <h2>Euclid Archive</h2>
+            <button>Book I <span>48</span></button>
+            <button class="active">Book III <span>37</span></button>
+            <button>Diagrams <span>112</span></button>
+            <button>Lines <span>64</span></button>
+          </aside>
+          <div class="app-content">
+            <div class="toolbar">
+              <span>Collection / Book III</span>
+              <button>Add proposition</button>
+            </div>
+            <div class="proposition-list">
+              <a href="#">
+                <span class="mini-diagram circle"></span>
+                <strong>Prop. XVI</strong>
+                <span>Tangent without the circle</span>
+              </a>
+              <a href="#">
+                <span class="mini-diagram triangle"></span>
+                <strong>Prop. XXV</strong>
+                <span>Describe the circle from a segment</span>
+              </a>
+              <a href="#">
+                <span class="mini-diagram wedge"></span>
+                <strong>Prop. XXVI</strong>
+                <span>Equal angles stand on equal arcs</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section type-section">
+        <div class="folio-number">PROP. VII.</div>
+        <div class="section-title">
+          <p class="eyebrow">Type</p>
+          <h2>Old-style serif, proof-scale rhythm.</h2>
+        </div>
+        <div class="type-specimen">
+          <div>
+            <span>Display · 76px</span>
+            <p class="display-sample">Book III.</p>
+          </div>
+          <div>
+            <span>Heading · 46px</span>
+            <p class="heading-sample">Proposition and theorem.</p>
+          </div>
+          <div>
+            <span>Body · 20px</span>
+            <p>
+              The page voice is literary and mathematical: compact capitals,
+              italic captions, generous leading, and equations embedded in prose.
+            </p>
+          </div>
+          <div>
+            <span>Proof Mono</span>
+            <code>blue = red = dotted relation;</code>
+          </div>
+        </div>
+      </section>
+
+      <section id="forms" class="section form-section">
+        <div class="folio-number">PROP. VIII.</div>
+        <div class="section-title">
+          <p class="eyebrow">Form</p>
+          <h2>Construct a theorem card.</h2>
+        </div>
+        <form>
+          <div>
+            <p class="eyebrow">Registration</p>
+            <p>Fields inherit the same thick ink rules and paper surface as the diagrams.</p>
+          </div>
+          <label>
+            Proposition name
+            <input type="text" value="Book III. Prop. XVI. Theor.">
+          </label>
+          <label>
+            Primary line
+            <select>
+              <option>Euclid Blue circle</option>
+              <option>Vermilion contradiction</option>
+              <option>Proof Ochre tangent</option>
+            </select>
+          </label>
+          <label>
+            Construction note
+            <textarea>Let the dashed red line be drawn from the point without the circle.</textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" checked="">
+            <span>I confirm this proposition ends in Q. E. D.</span>
+          </label>
+          <button type="button">Submit proposition</button>
+        </form>
+      </section>
+
+      <section class="section responsive">
+        <div class="folio-number">PROP. IX.</div>
+        <div class="section-title">
+          <p class="eyebrow">Responsive</p>
+          <h2>Single leaf to open spread.</h2>
+        </div>
+        <div class="breakpoints">
+          <article><code>320+</code><span>One proof column. Figures stack below theorem text.</span></article>
+          <article><code>720+</code><span>Two-page spread. Diagram and prose sit as facing leaves.</span></article>
+          <article><code>1080+</code><span>Wide theorem plate. Marginalia, tokens, and proofs align on a ruled grid.</span></article>
+        </div>
+      </section>
+
+      <section id="install" class="section install">
+        <div class="folio-number">PROP. X.</div>
+        <div>
+          <p class="eyebrow">Install</p>
+          <h2>One command. Every proposition.</h2>
+          <div class="command-line large">
+            <span class="gold-line"></span>
+            <code id="install-command">npx skills add <a class="repo-link" href="https://github.com/mrjf/euclid-design-skill" target="_blank" rel="noreferrer">mrjf/euclid-design-skill</a></code>
+            <button type="button" data-copy-command="" aria-label="Copy install command">copy</button>
+          </div>
+          <p class="closing">Colored notation · Heavy geometry · Dashed construction · Book-paper interface</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function selectCommand(commandElement) {
+        const range = document.createRange();
+        range.selectNodeContents(commandElement);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+
+      async function copyText(text, commandElement) {
+        const clipboard = globalThis.navigator?.clipboard;
+        if (clipboard?.writeText && window.isSecureContext) {
+          await clipboard.writeText(text);
+          return "copied";
+        }
+
+        const field = document.createElement("textarea");
+        field.value = text;
+        field.setAttribute("readonly", "");
+        field.style.position = "fixed";
+        field.style.left = "-9999px";
+        document.body.appendChild(field);
+        field.select();
+        const copied = document.execCommand("copy");
+        field.remove();
+        if (copied) {
+          return "copied";
+        }
+        selectCommand(commandElement);
+        return "selected";
+      }
+
+      document.querySelectorAll("[data-copy-command]").forEach((copyButton) => {
+        copyButton.addEventListener("click", async () => {
+          const commandElement = copyButton.closest(".command-line")?.querySelector("code");
+          if (!commandElement) return;
+
+          const original = copyButton.textContent;
+          try {
+            copyButton.textContent = await copyText(commandElement.textContent.trim(), commandElement);
+          } catch {
+            selectCommand(commandElement);
+            copyButton.textContent = "selected";
+          }
+          window.setTimeout(() => {
+            copyButton.textContent = original;
+          }, 1400);
+        });
+      });
+    </script>
+  
+
+<div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483000;"></div></body></html>
