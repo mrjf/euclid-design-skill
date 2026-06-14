@@ -15,3 +15,5 @@ Or, personally, if I'm only using something once, I just tell the agent:
 ```sh
 Use euclid.hhh.hm / github.com/mrjf/euclid-design-skill to ...
 ```
+
+![Original Euclid book spread](assets/readme/original-book.jpeg)
