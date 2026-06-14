@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
+  <defs>
+    <pattern id="grid" width="84" height="84" patternUnits="userSpaceOnUse">
+      <path d="M84 0H0V84" fill="none" stroke="#191816" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="speckle" width="42" height="42" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="9" r="1.3" fill="#191816" opacity="0.12"/>
+      <circle cx="31" cy="28" r="1" fill="#ffffff" opacity="0.28"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="14" dy="14" stdDeviation="0" flood-color="#d7c3a2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="627" fill="#efe2c9"/>
+  <rect width="1200" height="627" fill="url(#grid)"/>
+  <rect width="1200" height="627" fill="url(#speckle)" opacity="0.55"/>
+
+  <g transform="translate(70 62)">
+    <rect x="0" y="0" width="83" height="83" fill="#191816"/>
+    <rect x="10" y="10" width="63" height="63" fill="none" stroke="#f8efd9" stroke-width="3"/>
+    <text x="42" y="59" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#f8efd9">E</text>
+    <text x="109" y="34" font-family="'Courier New', monospace" font-size="22" font-weight="700" letter-spacing="1" fill="#191816">EUCLID DESIGN</text>
+    <text x="109" y="64" font-family="'Courier New', monospace" font-size="16" font-weight="700" letter-spacing="1.5" fill="#c43c35">PAPER / INK / GEOMETRY</text>
+  </g>
+
+  <g transform="translate(70 185)">
+    <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="500" fill="#191816">Paper-and-</text>
+    <text x="0" y="82" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="500" fill="#191816">geometry UI.</text>
+    <text x="0" y="145" font-family="Georgia, 'Times New Roman', serif" font-size="31" fill="#191816" opacity="0.75">Old-style serif type, thick ink rules,</text>
+    <text x="0" y="185" font-family="Georgia, 'Times New Roman', serif" font-size="31" fill="#191816" opacity="0.75">colored marks, warm paper, square dashes.</text>
+
+    <g transform="translate(0 258)">
+      <rect x="0" y="0" width="560" height="82" fill="#f8efd9" stroke="#191816" stroke-width="5"/>
+      <path d="M30 42H125" stroke="#0e558a" stroke-width="9"/>
+      <text x="152" y="51" font-family="'Courier New', monospace" font-size="19" font-weight="700" fill="#191816">mrjf/euclid-design-skill</text>
+      <g transform="translate(475 33)" fill="#c43c35">
+        <rect x="0" y="0" width="16" height="16"/>
+        <rect x="26" y="0" width="16" height="16"/>
+        <rect x="52" y="0" width="16" height="16"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(740 84)">
+    <rect x="0" y="0" width="406" height="446" fill="#f8efd9" stroke="#191816" stroke-width="6" filter="url(#softShadow)"/>
+    <g transform="translate(38 43)">
+      <circle cx="150" cy="160" r="118" fill="none" stroke="#0e558a" stroke-width="9"/>
+      <path d="M26 324H332" stroke="#e4a412" stroke-width="9" stroke-linecap="round"/>
+      <path d="M76 214L150 164" stroke="#0e558a" stroke-width="8" stroke-linecap="round"/>
+      <path d="M76 214L150 323" stroke="#c43c35" stroke-width="8" stroke-linecap="round"/>
+      <path d="M150 164L150 323" stroke="#191816" stroke-width="8" stroke-linecap="round"/>
+      <path d="M150 58L150 164" pathLength="115" fill="none" stroke="#e4a412" stroke-width="11" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M150 164L278 220" pathLength="130" fill="none" stroke="#0e558a" stroke-width="11" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M150 323L336 274" pathLength="190" fill="none" stroke="#c43c35" stroke-width="11" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M278 220L336 274" pathLength="85" fill="none" stroke="#191816" stroke-width="11" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M76 214L108 221A34 34 0 0 1 88 250Z" fill="#191816"/>
+      <path d="M150 323L187 323A37 37 0 0 0 162 286Z" fill="#0e558a"/>
+      <path d="M150 323L187 323A37 37 0 0 1 169 335Z" fill="#c43c35"/>
+    </g>
+
+    <g transform="translate(203 54)">
+      <rect x="0" y="0" width="72" height="72" fill="#191816"/>
+      <rect x="9" y="9" width="54" height="54" fill="none" stroke="#f8efd9" stroke-width="2"/>
+      <text x="36" y="52" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#f8efd9">T</text>
+      <text x="84" y="31" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#191816">hick rules</text>
+      <text x="84" y="56" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#191816">and marks</text>
+      <path d="M84 78H170" stroke="#e4a412" stroke-width="5"/>
+    </g>
+  </g>
+</svg>
