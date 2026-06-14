@@ -8,7 +8,7 @@ Treat each major section as a page from a proposition book:
 - Use full-width ruled sections or framed proof plates, not nested cards.
 - Pair strong type with one diagram or tool surface.
 - Keep proof diagrams clean: one main circle or arc, one tangent/base, two or three relation lines, one or two filled angle chips.
-- Use empty paper intentionally, but do not leave an unlabeled column with nothing in it.
+- Use empty paper intentionally as margin, gutter, or pause around the proof.
 
 ## Color Roles
 
@@ -30,7 +30,7 @@ Treat each major section as a page from a proposition book:
 
 - Use thick ink rules: `3px` to `5px`.
 - Keep border radius at `0` unless the host app already requires rounded corners.
-- Use paper texture through subtle grid lines and small speckles; avoid gradients that look synthetic.
+- Use paper texture through subtle grid lines, small speckles, and warm tonal shifts.
 - Buttons should be boxed, high contrast, and utilitarian.
 
 ## Square Dashes
