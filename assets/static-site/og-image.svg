@@ -1,52 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
+<svg xmlns="http://www.w3.org/2000/svg" width="1598" height="1598" viewBox="0 0 1598 1598">
   <defs>
-    <pattern id="grid" width="84" height="84" patternUnits="userSpaceOnUse">
-      <path d="M84 0H0V84" fill="none" stroke="#191816" stroke-opacity="0.055" stroke-width="1"/>
+    <pattern id="grid" width="112" height="112" patternUnits="userSpaceOnUse">
+      <path d="M112 0H0V112" fill="none" stroke="#191816" stroke-opacity="0.06" stroke-width="1.4"/>
     </pattern>
-    <pattern id="speckle" width="42" height="42" patternUnits="userSpaceOnUse">
-      <circle cx="7" cy="9" r="1.1" fill="#191816" opacity="0.11"/>
-      <circle cx="31" cy="28" r="1" fill="#ffffff" opacity="0.26"/>
+    <pattern id="speckle" width="54" height="54" patternUnits="userSpaceOnUse">
+      <circle cx="11" cy="13" r="1.5" fill="#191816" opacity="0.12"/>
+      <circle cx="39" cy="34" r="1.2" fill="#ffffff" opacity="0.28"/>
     </pattern>
   </defs>
 
-  <rect width="1200" height="627" fill="#efe2c9"/>
-  <rect width="1200" height="627" fill="url(#grid)"/>
-  <rect width="1200" height="627" fill="url(#speckle)" opacity="0.55"/>
+  <rect width="1598" height="1598" fill="#efe2c9"/>
+  <rect width="1598" height="1598" fill="url(#grid)"/>
+  <rect width="1598" height="1598" fill="url(#speckle)" opacity="0.55"/>
 
-  <g transform="translate(82 76)">
-    <rect x="0" y="0" width="196" height="196" fill="#191816"/>
-    <rect x="19" y="19" width="158" height="158" fill="none" stroke="#f8efd9" stroke-width="8"/>
-    <text x="98" y="141" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="132" font-weight="700" fill="#f8efd9">E</text>
+  <g transform="translate(128 120)">
+    <rect x="0" y="0" width="310" height="310" fill="#191816"/>
+    <rect x="30" y="30" width="250" height="250" fill="none" stroke="#f8efd9" stroke-width="12"/>
+    <text x="155" y="222" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="208" font-weight="700" fill="#f8efd9">E</text>
   </g>
 
-  <g transform="translate(82 340)">
-    <rect x="0" y="0" width="480" height="128" fill="#f8efd9" stroke="#191816" stroke-width="10"/>
-    <path d="M42 64H210" stroke="#0e558a" stroke-width="22"/>
-    <g transform="translate(258 50)" fill="#c43c35">
-      <rect x="0" y="0" width="30" height="30"/>
-      <rect x="50" y="0" width="30" height="30"/>
-      <rect x="100" y="0" width="30" height="30"/>
+  <g transform="translate(112 1120)">
+    <rect x="0" y="0" width="690" height="170" fill="#f8efd9" stroke="#191816" stroke-width="14"/>
+    <path d="M70 85H300" stroke="#0e558a" stroke-width="32"/>
+    <g transform="translate(380 61)" fill="#c43c35">
+      <rect x="0" y="0" width="48" height="48"/>
+      <rect x="78" y="0" width="48" height="48"/>
+      <rect x="156" y="0" width="48" height="48"/>
     </g>
-    <path d="M420 64H438" stroke="#191816" stroke-width="22"/>
+    <path d="M600 85H640" stroke="#191816" stroke-width="32"/>
   </g>
 
-  <g transform="translate(616 56)">
-    <rect x="24" y="24" width="458" height="500" fill="#d7c3a2"/>
-    <rect x="0" y="0" width="458" height="500" fill="#f8efd9" stroke="#191816" stroke-width="10"/>
+  <g transform="translate(606 266)">
+    <rect x="40" y="40" width="760" height="920" fill="#d7c3a2"/>
+    <rect x="0" y="0" width="760" height="920" fill="#f8efd9" stroke="#191816" stroke-width="18"/>
 
-    <g transform="translate(54 50)">
-      <circle cx="172" cy="168" r="137" fill="none" stroke="#0e558a" stroke-width="18"/>
-      <path d="M18 372H356" stroke="#e4a412" stroke-width="20" stroke-linecap="round"/>
-      <path d="M84 246L172 176" stroke="#0e558a" stroke-width="18" stroke-linecap="round"/>
-      <path d="M84 246L172 372" stroke="#c43c35" stroke-width="18" stroke-linecap="round"/>
-      <path d="M172 176L172 372" stroke="#191816" stroke-width="18" stroke-linecap="round"/>
-      <path d="M172 40L172 176" pathLength="145" fill="none" stroke="#e4a412" stroke-width="22" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M172 176L320 244" pathLength="160" fill="none" stroke="#0e558a" stroke-width="22" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M172 372L366 316" pathLength="205" fill="none" stroke="#c43c35" stroke-width="22" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M320 244L366 316" pathLength="85" fill="none" stroke="#191816" stroke-width="22" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M84 246L132 258A54 54 0 0 1 102 303Z" fill="#191816"/>
-      <path d="M172 372L232 372A60 60 0 0 0 190 313Z" fill="#0e558a"/>
-      <path d="M172 372L232 372A60 60 0 0 1 202 392Z" fill="#c43c35"/>
+    <g transform="translate(92 92)">
+      <circle cx="304" cy="300" r="250" fill="none" stroke="#0e558a" stroke-width="34"/>
+      <path d="M38 672H618" stroke="#e4a412" stroke-width="36" stroke-linecap="round"/>
+      <path d="M142 442L304 318" stroke="#0e558a" stroke-width="32" stroke-linecap="round"/>
+      <path d="M142 442L304 672" stroke="#c43c35" stroke-width="32" stroke-linecap="round"/>
+      <path d="M304 318L304 672" stroke="#191816" stroke-width="32" stroke-linecap="round"/>
+      <path d="M304 68L304 318" pathLength="250" fill="none" stroke="#e4a412" stroke-width="40" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M304 318L560 432" pathLength="265" fill="none" stroke="#0e558a" stroke-width="40" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M304 672L640 580" pathLength="340" fill="none" stroke="#c43c35" stroke-width="40" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M560 432L640 580" pathLength="145" fill="none" stroke="#191816" stroke-width="40" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M142 442L226 464A96 96 0 0 1 172 542Z" fill="#191816"/>
+      <path d="M304 672L410 672A106 106 0 0 0 336 568Z" fill="#0e558a"/>
+      <path d="M304 672L410 672A106 106 0 0 1 356 708Z" fill="#c43c35"/>
     </g>
   </g>
 </svg>
