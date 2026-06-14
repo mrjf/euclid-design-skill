@@ -9,7 +9,7 @@ metadata:
 
 # Euclid Design System
 
-A generic visual design system inspired by Euclidean geometry books: warm paper surfaces, old-style serif typography, thick ink borders, colored construction marks, ornamental initials, and square dashed lines. It is a visual language for any subject: SaaS tools, portfolios, docs, dashboards, editors, forms, games, reports, landing pages, or product interfaces.
+A generic visual design system inspired by Euclidean geometry books: warm paper surfaces, old-style serif typography, thick ink borders, colored construction marks, ornamental initials, and square dashed lines.
 
 Use this skill to give a page or component the Euclid look. For a full static starter, copy `assets/static-site/` into the target project and adapt it. For extra visual references, read `references/visual-system.md`.
 
@@ -25,16 +25,13 @@ The Euclid look is tactile, printed, and exact:
 - Chunky square dash segments for construction lines, separators, progress marks, and decorative rules.
 - Simple geometric accents: circles, arcs, sectors, line fragments, grids, and measured-looking marks.
 
-Do not force the content to be about mathematics. Use the system as a surface treatment and layout grammar.
-
 ## Core Principles
 
 1. **Paper first.** Start with a page-like field: cream ground, subtle grid, light speckle, and quiet tonal variation.
 2. **Ink defines structure.** Use thick black borders, dividers, and frames to give the interface authority.
 3. **Color is annotation.** Blue, red, and ochre should feel like printed marks added to the page, not a conventional brand gradient.
-4. **Geometry is optional language.** Add circles, arcs, sectors, rays, and ruled marks when they support the layout or mood; do not invent a literal diagram if the UI does not need one.
-5. **Type sets the era.** Use high-contrast serif display type, upright readable body text, small caps labels, and mono controls.
-6. **Dashes are signature.** The chunky square dashed line is the most recognizable motif; use it consistently across horizontal, vertical, and diagonal marks.
+4. **Type sets the era.** Use high-contrast serif display type, upright readable body text, small caps labels, and mono controls.
+5. **Dashes are signature.** The chunky square dashed line is the most recognizable motif; use it consistently across horizontal, vertical, and diagonal marks.
 
 ## Implementation Workflow
 
@@ -44,8 +41,7 @@ Do not force the content to be about mathematics. Use the system as a surface tr
 4. **Set the type hierarchy.** Use serif display text for high-level statements, readable serif body copy, mono labels, and small caps metadata.
 5. **Add thick rules.** Frame important areas with 3px to 6px ink borders; use horizontal and vertical rules as real layout structure.
 6. **Use colored marks.** Add blue, red, or ochre lines, swatches, chips, badges, or state marks where they clarify hierarchy or action.
-7. **Add geometric accents only where useful.** Use SVG/CSS geometry for decoration, states, data, empty panels, or hero art, but keep the interface content primary.
-8. **Verify in browser.** Check text fit, mobile layout, dash rhythm, focus states, copy buttons, and form controls.
+7. **Verify in browser.** Check text fit, mobile layout, dash rhythm, focus states, copy buttons, and form controls.
 
 ## Tokens
 
