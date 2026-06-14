@@ -40,10 +40,10 @@
       <path d="M110 254L218 198" stroke="#0e558a" stroke-width="20" stroke-linecap="round"/>
       <path d="M110 254L218 390" stroke="#c43c35" stroke-width="20" stroke-linecap="round"/>
       <path d="M218 198L218 390" stroke="#191816" stroke-width="20" stroke-linecap="round"/>
-      <path d="M218 48L218 198" pathLength="150" fill="none" stroke="#e4a412" stroke-width="24" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M218 198L350 262" pathLength="150" fill="none" stroke="#0e558a" stroke-width="24" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M218 390L414 334" pathLength="210" fill="none" stroke="#c43c35" stroke-width="24" stroke-linecap="butt" stroke-dasharray="10 5"/>
-      <path d="M350 262L414 334" pathLength="105" fill="none" stroke="#191816" stroke-width="24" stroke-linecap="butt" stroke-dasharray="10 5"/>
+      <path d="M218 48L218 198" pathLength="132" fill="none" stroke="#e4a412" stroke-width="24" stroke-linecap="butt" stroke-dasharray="24 12"/>
+      <path d="M218 198L350 262" pathLength="132" fill="none" stroke="#0e558a" stroke-width="24" stroke-linecap="butt" stroke-dasharray="24 12"/>
+      <path d="M218 390L414 334" pathLength="204" fill="none" stroke="#c43c35" stroke-width="24" stroke-linecap="butt" stroke-dasharray="24 12"/>
+      <path d="M350 262L414 334" pathLength="96" fill="none" stroke="#191816" stroke-width="24" stroke-linecap="butt" stroke-dasharray="24 12"/>
       <path d="M110 254L164 268A62 62 0 0 1 130 318Z" fill="#191816"/>
       <path d="M218 390L288 390A70 70 0 0 0 240 322Z" fill="#0e558a"/>
       <path d="M218 390L288 390A70 70 0 0 1 252 414Z" fill="#c43c35"/>
